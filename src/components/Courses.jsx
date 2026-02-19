@@ -51,7 +51,7 @@ const Courses = () => {
               </div>
               <div className="card p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition duration-300">
                 <div className="text-5xl text-yellow-500 mb-4 flex justify-center animate-bounce" style={{animationDelay: '0.2s'}}><FaTrophy /></div>
-                <h3 className="text-3xl font-bold text-dark mb-2">4.9★</h3>
+                <h3 className="text-3xl font-bold text-dark mb-2">4.8★</h3>
                 <p className="text-gray-600">Average Rating</p>
               </div>
             </div>
