@@ -12,7 +12,7 @@ return (
         
         <div className="container-custom relative z-10 py-20 md:py-32">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-8 backdrop-blur-sm border border-white/20 animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full mb-4 backdrop-blur-sm border border-white/20 animate-fade-in">
                 <FaFire className="text-yellow-300" />
                 <span className="text-sm font-semibold">🎉 Live for 50K+ Students</span>
             </div>
@@ -21,8 +21,8 @@ return (
                 <div className="space-y-8 animate-slide-in-left">
                     {/* Main Heading */}
                     <div>
-                        <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                            <span className="block mb-2">Crush Your</span>
+                        <h1 className="text-5xl md:text-7xl font-black mb-2 ">
+                            <span className="block ">Crush Your</span>
                             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-100 to-white">Board Exams</span>
                             <span className="block text-blue-100">Like a Pro 🚀</span>
                         </h1>
