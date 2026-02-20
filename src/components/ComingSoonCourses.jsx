@@ -6,7 +6,57 @@ const ComingSoonCourses = () => {
 
   const comingSoonCourses = [
     {
-      id: 1,
+    id: 1,
+    name: 'JEE Main 2027 Complete Preparation',
+    category: 'Class 11-12',
+    launchDate: '1 June 2026',
+    students: 5120,
+    icon: '📘',
+    color: 'from-blue-500 to-indigo-600',
+    description: 'Complete Physics, Chemistry & Maths for JEE Main with PYQs'
+  },
+  {
+    id: 2,
+    name: 'JEE Main Crash Course 2026',
+    category: 'Dropper / Class 12',
+    launchDate: '15 June 2026',
+    students: 3890,
+    icon: '🚀',
+    color: 'from-indigo-400 to-purple-600',
+    description: 'Revision, mock tests & high-weightage topics for JEE Main'
+  },
+  {
+    id: 3,
+    name: 'NEET 2027 Complete Preparation',
+    category: 'Class 11-12',
+    launchDate: '1 July 2026',
+    students: 6345,
+    icon: '🩺',
+    color: 'from-green-500 to-emerald-600',
+    description: 'Complete PCB syllabus with NCERT focus & PYQs for NEET'
+  },
+  {
+    id: 4,
+    name: 'NEET Crash Course 2026',
+    category: 'Dropper / Class 12',
+    launchDate: '20 July 2026',
+    students: 4210,
+    icon: '🎯',
+    color: 'from-emerald-400 to-teal-600',
+    description: 'Fast-track revision, mock tests & important diagrams for NEET'
+  },
+  {
+    id: 5,
+    name: 'JEE + NEET Foundation Program',
+    category: 'Class 9-10',
+    launchDate: '1 August 2026',
+    students: 2980,
+    icon: '🏆',
+    color: 'from-yellow-400 to-orange-500',
+    description: 'Strong foundation in Physics, Chemistry, Maths & Biology'
+  },
+    {
+      id: 6,
       name: 'Advanced Python Programming',
       category: 'Class 12',
       launchDate: '1 March 2026',
@@ -16,7 +66,7 @@ const ComingSoonCourses = () => {
       description: 'Master Python with real-world projects'
     },
     {
-      id: 2,
+      id: 7,
       name: 'Web Development with MERN',
       category: 'Advanced',
       launchDate: '15 March 2026',
@@ -26,7 +76,7 @@ const ComingSoonCourses = () => {
       description: 'Build full-stack web applications'
     },
     {
-      id: 3,
+      id: 8,
       name: 'AI & Machine Learning Basics',
       category: 'Class 12 + Beyond',
       launchDate: '1 April 2026',
@@ -36,7 +86,7 @@ const ComingSoonCourses = () => {
       description: 'Introduction to AI and ML concepts'
     },
     {
-      id: 4,
+      id: 9,
       name: 'Competitive Programming',
       category: 'Class 11-12',
       launchDate: '10 April 2026',
@@ -46,7 +96,7 @@ const ComingSoonCourses = () => {
       description: 'Crack coding interviews with us'
     },
     {
-      id: 5,
+      id: 10,
       name: 'Digital Marketing Mastery',
       category: 'Advanced',
       launchDate: '20 April 2026',
@@ -56,7 +106,7 @@ const ComingSoonCourses = () => {
       description: 'Learn modern digital marketing'
     },
     {
-      id: 6,
+      id: 11,
       name: 'Quantum Physics Explorer',
       category: 'Class 12',
       launchDate: '5 May 2026',
@@ -64,7 +114,8 @@ const ComingSoonCourses = () => {
       icon: '⚛️',
       color: 'from-cyan-400 to-blue-600',
       description: 'Deep dive into quantum mechanics'
-    }
+    },
+    
   ];
 
   const toggleNotification = (id) => {

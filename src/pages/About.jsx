@@ -165,6 +165,11 @@ const About = () => {
                     <div className="text-8xl">{member.image}</div>
                   </div>
 
+                  {/* when need images of team */}
+                  {/* <div className=" p-1 text-center group-hover:scale-110 transition duration-500">
+                    <img src={member.image} alt={member.name} className="w-50 h-50 mx-auto rounded-full" />
+                  </div> */}
+
                   {/* Info */}
                   <div className="p-6 text-center">
                     <h3 className="text-xl font-bold text-dark mb-2">{member.name}</h3>

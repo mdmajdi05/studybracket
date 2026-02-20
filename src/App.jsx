@@ -10,10 +10,14 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Courses from './components/Courses'
 import './index.css'
+import ScrollToTop from './components/ScrollToTop'
+import WhatsAppButton from './components/WhatsAppButton'
 
 function App() {
   return (
     <BrowserRouter>
+    <WhatsAppButton />
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">

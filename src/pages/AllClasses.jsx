@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { classes } from '../data/coursesData';
+import { classes , coursesData} from '../data/coursesData';
 import { FaArrowRight, FaBook, FaVideo, FaFilePdf, FaStar } from 'react-icons/fa';
 
 const AllClasses = () => {
@@ -21,8 +21,8 @@ const AllClasses = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
             <div className="card p-6 text-center">
-              <div className="text-4xl font-bold text-primary mb-2">4</div>
-              <p className="text-gray-600">Classes (9-12)</p>
+              <div className="text-4xl font-bold text-primary mb-2">{classes.length}</div>
+              <p className="text-gray-600">Classes ({classes[0]?.id} - {classes[classes.length - 1]?.id})</p>
             </div>
             <div className="card p-6 text-center">
               <div className="text-4xl font-bold text-secondary mb-2">16+</div>
@@ -58,7 +58,7 @@ const AllClasses = () => {
                   <div className="flex justify-around mb-6 text-gray-400 group-hover:text-blue-50 text-sm transition">
                     <div className="flex flex-col items-center">
                       <FaBook className="text-lg mb-1 group-hover:scale-125 transition" />
-                      <span>4 Courses</span>
+                      <span>{coursesData[cls.id]?.length || 0} Courses</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <FaVideo className="text-lg mb-1 group-hover:scale-125 transition" />

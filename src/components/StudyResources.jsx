@@ -5,9 +5,10 @@ import Toast from './Toast';
 import { generateSamplePDF, downloadPDF } from '../utils/pdfGenerator';
 
 const StudyResources = () => {
-  const [selectedClass, setSelectedClass] = useState(9);
+  const [selectedClass, setSelectedClass] = useState(classes[0].id);
   const [searchTerm, setSearchTerm] = useState('');
   const [toast, setToast] = useState(null);
+
 
   const handleDownload = (pdf) => {
     try {

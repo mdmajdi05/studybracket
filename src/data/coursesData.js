@@ -1,4 +1,8 @@
 export const classes = [
+  { id: 5, name: 'Class 5' },
+  { id: 6, name: 'Class 6' },
+  { id: 7, name: 'Class 7' },
+  { id: 8, name: 'Class 8' },
   { id: 9, name: 'Class 9' },
   { id: 10, name: 'Class 10' },
   { id: 11, name: 'Class 11' },
@@ -6,6 +10,125 @@ export const classes = [
 ];
 
 export const coursesData = {
+  5: [
+    {
+      id: 'maths-5',
+      name: 'Mathematics',
+      icon: '📐',
+      description: 'Class 5 Mathematics - Basic Arithmetic, Geometry & Word Problems',
+      topics: ['Large Numbers', 'Addition & Subtraction', 'Multiplication & Division', 'Fractions', 'Decimals', 'Factors & Multiples', 'Perimeter & Area', 'Volume', 'Time & Measurement', 'Data Handling'],
+      chapters: 12,
+      duration: '5 months'
+    },
+    {
+      id: 'science-5',
+      name: 'Science',
+      icon: '🔬',
+      description: 'Class 5 Science - Basic Concepts of Plants, Animals & Environment',
+      topics: ['Plant Life', 'Animal Life', 'Human Body', 'Food & Health', 'Air & Water', 'Force & Energy', 'Light & Shadows', 'Natural Resources'],
+      chapters: 10,
+      duration: '5 months'
+    },
+    {
+      id: 'english-5',
+      name: 'English',
+      icon: '📚',
+      description: 'Class 5 English - Grammar, Stories & Writing Skills',
+      topics: ['Parts of Speech', 'Tenses', 'Comprehension', 'Story Writing', 'Letter Writing', 'Vocabulary Building'],
+      chapters: 10,
+      duration: '4 months'
+    }
+  ],
+
+  6: [
+    {
+      id: 'maths-6',
+      name: 'Mathematics',
+      icon: '📐',
+      description: 'Class 6 Mathematics - Number System, Algebra & Geometry Basics',
+      topics: ['Whole Numbers', 'Fractions', 'Decimals', 'Ratio & Proportion', 'Basic Algebra', 'Mensuration', 'Data Handling'],
+      chapters: 14,
+      duration: '6 months'
+    },
+    {
+      id: 'science-6',
+      name: 'Science',
+      icon: '🔬',
+      description: 'Class 6 Science - Physics, Chemistry & Biology Introduction',
+      topics: ['Food & Components', 'Sorting Materials', 'Changes Around Us', 'Motion & Measurement', 'Light & Electricity', 'Plants & Animals'],
+      chapters: 16,
+      duration: '6 months'
+    },
+    {
+      id: 'social-6',
+      name: 'Social Science',
+      icon: '🌍',
+      description: 'Class 6 Social Science - History, Geography & Civics',
+      topics: ['Ancient Civilizations', 'Globe & Maps', 'Government & Democracy', 'India - Our Country'],
+      chapters: 12,
+      duration: '5 months'
+    }
+  ],
+
+  7: [
+    {
+      id: 'maths-7',
+      name: 'Mathematics',
+      icon: '📐',
+      description: 'Class 7 Mathematics - Algebra, Integers & Geometry',
+      topics: ['Integers', 'Fractions & Decimals', 'Algebraic Expressions', 'Simple Equations', 'Lines & Angles', 'Perimeter & Area', 'Data Handling'],
+      chapters: 15,
+      duration: '6 months'
+    },
+    {
+      id: 'science-7',
+      name: 'Science',
+      icon: '🔬',
+      description: 'Class 7 Science - Physical & Life Sciences',
+      topics: ['Nutrition in Plants & Animals', 'Heat', 'Acids & Bases', 'Physical & Chemical Changes', 'Motion & Time', 'Electric Current'],
+      chapters: 18,
+      duration: '6 months'
+    },
+    {
+      id: 'social-7',
+      name: 'Social Science',
+      icon: '🌍',
+      description: 'Class 7 Social Science - Medieval History & Civics',
+      topics: ['Medieval India', 'Environment', 'State Government', 'Gender & Society'],
+      chapters: 14,
+      duration: '5 months'
+    }
+  ],
+
+  8: [
+    {
+      id: 'maths-8',
+      name: 'Mathematics',
+      icon: '📐',
+      description: 'Class 8 Mathematics - Linear Equations, Mensuration & Data',
+      topics: ['Rational Numbers', 'Linear Equations', 'Understanding Quadrilaterals', 'Mensuration', 'Data Handling', 'Probability'],
+      chapters: 16,
+      duration: '6 months'
+    },
+    {
+      id: 'science-8',
+      name: 'Science',
+      icon: '🔬',
+      description: 'Class 8 Science - Force, Energy, Cell & Reproduction',
+      topics: ['Crop Production', 'Microorganisms', 'Force & Pressure', 'Friction', 'Sound', 'Chemical Effects of Current', 'Cell Structure'],
+      chapters: 18,
+      duration: '6 months'
+    },
+    {
+      id: 'social-8',
+      name: 'Social Science',
+      icon: '🌍',
+      description: 'Class 8 Social Science - Modern History & Resources',
+      topics: ['Colonialism & Freedom Struggle', 'Resources', 'Parliament & Judiciary', 'Economic Activities'],
+      chapters: 15,
+      duration: '5 months'
+    }
+  ],
   9: [
     {
       id: 'maths-9',
@@ -161,6 +284,29 @@ export const coursesData = {
 };
 
 export const studyResources = {
+  5: [
+    { id: 'pdf21', name: 'Class 5 Mathematics Notes', type: 'pdf', size: '3.2 MB', url: '/pdfs/maths-5.pdf' },
+    { id: 'pdf22', name: 'Class 5 Science Notes', type: 'pdf', size: '3.8 MB', url: '/pdfs/science-5.pdf' },
+    { id: 'pdf23', name: 'Class 5 English Grammar', type: 'pdf', size: '2.9 MB', url: '/pdfs/english-5.pdf' },
+  ],
+
+  6: [
+    { id: 'pdf24', name: 'Class 6 Mathematics Guide', type: 'pdf', size: '4.1 MB', url: '/pdfs/maths-6.pdf' },
+    { id: 'pdf25', name: 'Class 6 Science Study Material', type: 'pdf', size: '4.5 MB', url: '/pdfs/science-6.pdf' },
+    { id: 'pdf26', name: 'Class 6 Social Science Notes', type: 'pdf', size: '4.2 MB', url: '/pdfs/social-6.pdf' },
+  ],
+
+  7: [
+    { id: 'pdf27', name: 'Class 7 Mathematics Notes', type: 'pdf', size: '4.3 MB', url: '/pdfs/maths-7.pdf' },
+    { id: 'pdf28', name: 'Class 7 Science Guide', type: 'pdf', size: '5.0 MB', url: '/pdfs/science-7.pdf' },
+    { id: 'pdf29', name: 'Class 7 Social Science Notes', type: 'pdf', size: '4.7 MB', url: '/pdfs/social-7.pdf' },
+  ],
+
+  8: [
+    { id: 'pdf30', name: 'Class 8 Mathematics Complete Notes', type: 'pdf', size: '4.8 MB', url: '/pdfs/maths-8.pdf' },
+    { id: 'pdf31', name: 'Class 8 Science Study Material', type: 'pdf', size: '5.6 MB', url: '/pdfs/science-8.pdf' },
+    { id: 'pdf32', name: 'Class 8 Social Science Guide', type: 'pdf', size: '5.1 MB', url: '/pdfs/social-8.pdf' },
+  ],
   9: [
     { id: 'pdf1', name: 'Class 9 Mathematics - Complete Notes', type: 'pdf', size: '4.2 MB', url: '/pdfs/maths-formula-9.pdf' },
     { id: 'pdf2', name: 'CBSE Science Class 9 - All Chapters', type: 'pdf', size: '5.8 MB', url: '/pdfs/science-diagrams-9.pdf' },

@@ -4,7 +4,7 @@ import { FaGraduationCap, FaBook, FaDownload, FaStar, FaAward, FaFire, FaCheckCi
 
 const Hero = () => {
 return (
-    <div className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-400 to-secondary text-white">
+    <div className="relative overflow-hidden bg-gradient-to-br from-primary via-blue-400 to-secondary text-white py-15">
         {/* Animated background elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-white opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
         <div className="absolute top-1/2 right-0 w-80 h-80 bg-yellow-300 opacity-5 rounded-full translate-x-1/2 animate-pulse" style={{animationDelay: '1s'}}></div>
@@ -86,8 +86,8 @@ return (
                 <div className="hidden md:block relative animate-slide-in-right">
                     <div className="relative">
                         {/* Floating card 1 */}
-                        <div className="absolute -top-8 -left-12 bg-white/95 text-dark px-6 py-4 rounded-xl shadow-2xl z-10 animate-bounce" style={{animationDuration: '3s'}}>
-                            <div className="flex items-center gap-2">
+                        <div className="absolute z-11 -top-8 -left-12 bg-white/95 text-dark px-6 py-4 rounded-xl shadow-2xl z-10 animate-bounce" style={{animationDuration: '3s'}}>
+                            <div className="flex  items-center gap-2">
                                 <FaAward className="text-yellow-500 text-xl" />
                                 <div>
                                     <div className="font-bold text-sm">Top Rated</div>
@@ -121,7 +121,7 @@ return (
             </div>
 
             {/* Stats Bar */}
-            <div className="mt-16 pt-12 border-t border-white/20 grid grid-cols-4 md:grid-cols-4 gap-4">
+            {/* <div className="mt-16 pt-12 border-t border-white/20 grid grid-cols-4 md:grid-cols-4 gap-4">
                 <div className="text-center">
                     <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-1">50+</div>
                     <div className="text-sm text-blue-100">Courses</div>
@@ -138,7 +138,7 @@ return (
                     <div className="text-3xl md:text-4xl font-bold text-pink-300 mb-1">50K+</div>
                     <div className="text-sm text-blue-100">Students</div>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
 );
