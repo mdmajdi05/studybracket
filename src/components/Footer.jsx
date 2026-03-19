@@ -45,7 +45,7 @@ const Footer = () => {
                             <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-xl">
                                 <FaTwitter />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-xl">
+                            <a href="https://www.instagram.com/studybracket?igsh=Nnd5eG8zOWkwODVr" className="text-gray-400 hover:text-primary transition duration-300 text-xl">
                                 <FaInstagram />
                             </a>
                             <a href="#" className="text-gray-400 hover:text-primary transition duration-300 text-xl">
