@@ -2,8 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { classes , coursesData} from '../data/coursesData';
 import { FaArrowRight, FaBook, FaVideo, FaFilePdf, FaStar } from 'react-icons/fa';
+import { usePopup } from '../context/PopupContext';
 
 const AllClasses = () => {
+  const { setIsOpen } = usePopup();
   return (
     <div className="min-h-screen bg-gradient-to-b from-light to-white">
       {/* Header */}
@@ -41,7 +43,7 @@ const AllClasses = () => {
           {/* All Classes Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {classes.map((cls, idx) => (
-              <Link to={`/class/${cls.id}`} key={cls.id}>
+              <Link to={`/class/${cls.id}`} key={cls.id} onClick={() => setIsOpen(true)}>
                 <div 
                   className="card p-8 text-center group cursor-pointer transform hover:-translate-y-4 h-full flex flex-col justify-center bg-gradient-to-br from-white to-light hover:from-primary hover:to-secondary transition-all duration-300"
                   style={{animation: `slideInUp 0.5s ease-out ${idx * 0.1}s both`}}
@@ -104,7 +106,7 @@ const AllClasses = () => {
             <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
               Join thousands of students who have improved their scores using StudyBracket's verified resources
             </p>
-            <Link to="/class/9" className="inline-block bg-white text-primary px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition duration-300 transform hover:-translate-y-1 shadow-xl text-lg">
+            <Link to="/class/9" onClick={() => setIsOpen(true)} className="inline-block bg-white text-primary px-8 py-4 rounded-2xl font-bold hover:bg-gray-100 transition duration-300 transform hover:-translate-y-1 shadow-xl text-lg">
               Start Studying Now →
             </Link>
           </div>

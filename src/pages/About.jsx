@@ -55,7 +55,7 @@ const About = () => {
             <div className="text-center max-w-3xl mx-auto animate-fade-in">
               <h1 className="text-5xl md:text-6xl font-black mb-6">About StudyBracket</h1>
               <p className="text-2xl text-blue-100 leading-relaxed">
-                Empowering CBSE students across India with free, high-quality educational content and mentorship since 2024.
+                Empowering CBSE students across India with free, high-quality educational content and mentorship since 2015.
               </p>
             </div>
           </div>
@@ -70,12 +70,13 @@ const About = () => {
                 <div className="text-5xl mb-4">🎯</div>
                 <h2 className="text-3xl font-bold text-dark mb-4">Our Mission</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  To make quality CBSE education accessible to every student, regardless of their background or location. We believe that education should be free, engaging, and effective.
+                  To democratize quality education by providing free, comprehensive CBSE-aligned learning resources to students from all walks of life. We are committed to breaking down financial barriers and ensuring that every student has access to world-class educational content, regardless of their socioeconomic background.
                 </p>
                 <div className="mt-6 space-y-3 text-gray-600">
-                  <p>✓ Free for all students, forever</p>
-                  <p>✓ Expert-curated content</p>
-                  <p>✓ Interactive learning experience</p>
+                  <p>✓ Completely free educational platform</p>
+                  <p>✓ Expert-curated CBSE content</p>
+                  <p>✓ Accessible to all students nationwide</p>
+                  <p>✓ Focus on holistic development</p>
                 </div>
               </div>
 
@@ -84,12 +85,36 @@ const About = () => {
                 <div className="text-5xl mb-4">🚀</div>
                 <h2 className="text-3xl font-bold text-dark mb-4">Our Vision</h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  To be India's most trusted online learning platform for CBSE students, helping millions achieve academic excellence and realize their dreams.
+                  To become India's leading educational technology platform, empowering millions of CBSE students to achieve academic excellence and build successful careers. We envision a future where quality education is universally accessible, and every student can reach their full potential through innovative, technology-driven learning solutions.
                 </p>
                 <div className="mt-6 space-y-3 text-gray-600">
-                  <p>✓ Personalized learning paths</p>
-                  <p>✓ 24/7 doubt support</p>
-                  <p>✓ World-class instructors</p>
+                  <p>✓ Personalized learning experiences</p>
+                  <p>✓ 24/7 student support system</p>
+                  <p>✓ Industry-leading educational technology</p>
+                  <p>✓ Nationwide educational transformation</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Location Section */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-center mb-8">Our Location</h2>
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="text-center mb-6">
+                  <h3 className="text-xl font-bold text-dark mb-2">Visit Our Office</h3>
+                  <p className="text-gray-600">Delhi, India</p>
+                </div>
+                <div className="flex justify-center">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3459.3586794569665!2d77.16193347550252!3d28.678314975639765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDQwJzQxLjkiTiA3N8KwMDknNTIuMiJF!5e1!3m2!1sen!2sin!4v1773912440321!5m2!1sen!2sin" 
+                    width="600" 
+                    height="450" 
+                    style={{border: 0}} 
+                    allowFullScreen="" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="rounded-lg shadow-md max-w-full"
+                  ></iframe>
                 </div>
               </div>
             </div>

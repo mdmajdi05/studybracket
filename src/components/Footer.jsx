@@ -109,14 +109,14 @@ const Footer = () => {
                                 <FaPhone className="text-blue-300 mt-1 mr-3 flex-shrink-0" />
                                 <div>
                                     <p className="text-xs text-gray-400">Call Us</p>
-                                    <p className="text-gray-200 font-semibold">+91-9876-543-210</p>
+                                    <p className="text-gray-200 font-semibold">+917827074012</p>
                                 </div>
                             </li>
                             <li className="flex items-start">
                                 <FaEnvelope className="text-blue-300 mt-1 mr-3 flex-shrink-0" />
                                 <div>
                                     <p className="text-xs text-gray-400">Email</p>
-                                    <p className="text-gray-200 font-semibold">info@studybracket.com</p>
+                                    <p className="text-gray-200 font-semibold">studybracket@gmail.com</p>
                                 </div>
                             </li>
                             <li className="flex items-start">
@@ -175,10 +175,10 @@ const Footer = () => {
                         {/* <p className="text-gray-500 text-sm border-t border-gray-700 pt-4">
                             Developed by <a href="https://majdi-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary transition duration-300 font-semibold">Majdi</a> ✨
                         </p> */}
-                        <p className="text-gray-500 text-sm border-t border-gray-700 pt-4">
-                            Developed by <a href="https://majdi-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-secondary transition duration-300 font-semibold">Majdi</a> 
+                        {/* <p className="text-gray-500 text-sm border-t border-gray-700 pt-4">
+                            Developed by <a href="https://majdi-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-secondary transition duration-300 font-semibold">Majdi</a>  */}
                             {/* ✨ */}
-                        </p>
+                        {/* </p> */}
                     </div>
                 </div>
             </div>

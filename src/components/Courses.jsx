@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { coursesData, classes } from '../data/coursesData';
 import { FaPlay, FaUsers, FaTrophy, FaArrowRight } from 'react-icons/fa';
 import Breadcrumb from './Breadcrumb';
+import { usePopup } from '../context/PopupContext';
 
 const Courses = () => {
+  const { setIsOpen } = usePopup();
   // Get all unique courses from all classes
   const allCourses = [];
   Object.values(coursesData).forEach(classCourses => {
@@ -119,6 +121,7 @@ const Courses = () => {
                         {/* Join Button */}
                         <Link 
                           to={`/class/${cls.id}`}
+                          onClick={() => setIsOpen(true)}
                           className="w-full bg-gradient-to-r from-primary to-secondary text-white py-3 rounded-lg font-bold text-center hover:shadow-lg transition duration-300 transform group-hover:-translate-y-1 flex items-center justify-center gap-2"
                         >
                           <span>Join Now</span>
@@ -142,6 +145,7 @@ const Courses = () => {
             </p>
             <Link 
               to="/" 
+              onClick={() => setIsOpen(true)}
               className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-xl font-bold hover:bg-blue-50 transition text-lg transform hover:-translate-y-1"
             >
               Start Learning Free
