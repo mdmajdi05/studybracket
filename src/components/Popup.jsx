@@ -22,38 +22,38 @@ const Popup = () => {
   // };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  try {
-    const response = await fetch(
-      'https://formsubmit.co/ajax/studybracket@gmail.com',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+    try {
+      const response = await fetch(
+        'https://formsubmit.co/ajax/studybracket@gmail.com',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        }
+      );
+
+      const data = await response.json();
+
+      if (data.success === 'true' || response.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          interest: ''
+        });
+
+        setTimeout(() => {
+          setSubmitted(false);
+          setIsOpen(false);
+        }, 3000);
       }
-    );
-
-    const data = await response.json();
-
-    if (data.success === 'true' || response.ok) {
-      setSubmitted(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        interest: ''
-      });
-
-      setTimeout(() => {
-        setSubmitted(false);
-        setIsOpen(false);
-      }, 3000);
+    } catch (error) {
+      console.error('Popup form error:', error);
     }
-  } catch (error) {
-    console.error('Popup form error:', error);
-  }
-};
+  };
 
   const handleChange = (e) => {
     setFormData({
@@ -149,10 +149,15 @@ const Popup = () => {
                   className="w-full pl-10 pr-4 py-3 bg-gray-700/50 border border-gray-600 rounded-xl text-white focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 transition"
                 >
                   <option value="">Interested in</option>
-                  <option value="courses">Courses</option>
-                  <option value="classes">Classes</option>
-                  <option value="study-resources">Study Resources</option>
-                  <option value="tutoring">Tutoring</option>
+                  <option value="5-8">Classes 5–8</option>
+                  <option value="9-12">Classes 9–12</option>
+                  <option value="jee-neet">JEE / NEET</option>
+                  <option value="cuet">CUET (UG / PG)</option>
+                  <option value="ca-cs">CA / CS / CMA / CFA</option>
+                  <option value="digital-marketing">Digital Marketing</option>
+                  <option value="interior-design">Interior Designing & Architecture</option>
+                  <option value="computer">Computer Basics & Advanced</option>
+                  <option value="spoken-english">Spoken English</option>
                 </select>
               </div>
 
@@ -169,14 +174,14 @@ const Popup = () => {
             </form>
 
             {submitted && (
-  <motion.p
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    className="text-green-400 text-center font-semibold"
-  >
-    ✓ Thank you! We will contact you soon.
-  </motion.p>
-)}
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-green-400 text-center font-semibold"
+              >
+                ✓ Thank you! We will contact you soon.
+              </motion.p>
+            )}
           </motion.div>
         </motion.div>
       )}
