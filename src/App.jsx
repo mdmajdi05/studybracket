@@ -120,6 +120,8 @@ function App() {
     };
 
     fetchMaintenanceMessage();
+    const interval = setInterval(fetchMaintenanceMessage, 10000);
+    return () => clearInterval(interval);
 
   }, []);
 
