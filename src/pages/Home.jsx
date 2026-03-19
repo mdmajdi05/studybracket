@@ -15,7 +15,7 @@ const Home = () => {
       <Hero />
       <Classes />
       <Gallery />
-      <StudyResources />
+      {/* <StudyResources /> */}
       <ComingSoonCourses />
       <Gamification />
       <Testimonials />

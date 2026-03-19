@@ -18,7 +18,8 @@ const Classes = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {classes.map((cls, idx) => (
-            <Link to={`/class/${cls.id}`} key={cls.id} onClick={() => setIsOpen(true)}>
+            // <Link to={`/class/${cls.id}`} key={cls.id} onClick={() => setIsOpen(true)}>
+            <Link key={cls.id} onClick={() => setIsOpen(true)}>
               <div 
                 className="card p-8 text-center group cursor-pointer transform hover:-translate-y-4 h-full flex flex-col justify-center"
                 style={{animation: `slideInUp 0.5s ease-out ${idx * 0.1}s both`}}
