@@ -150,7 +150,7 @@ const Popup = () => {
                 >
                   <option value="">Interested in</option>
                   <option value="5-8">Classes 5–8</option>
-                  <option value="9-12">Classes 9–12</option>
+                  <option value="9-12">Classes 9–12 (Sciences/Commerce/Humanities)</option>
                   <option value="jee-neet">JEE / NEET</option>
                   <option value="cuet">CUET (UG / PG)</option>
                   <option value="ca-cs">CA / CS / CMA / CFA</option>

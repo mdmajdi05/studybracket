@@ -8,7 +8,7 @@ import { generateSamplePDF, downloadPDF } from '../utils/pdfGenerator';
 
 const ClassDetails = () => {
   const { classId } = useParams();
-  const classNum = parseInt(classId);
+  const classNum = isNaN(parseInt(classId)) ? classId : parseInt(classId);
   const [toast, setToast] = useState(null);
   
   const courses = coursesData[classNum] || [];
@@ -49,7 +49,7 @@ return (
               <FaArrowLeft className="mr-2" />
               Back to Home
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold mb-3">Class {classNum}</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-3">Class {typeof classNum === 'string' ? (classNum === 'competitive-exams' ? 'Competitive Exams' : classNum) : classNum}</h1>
             <p className="text-blue-100 text-lg">Complete study materials and resources for Class {classNum}</p>
           </div>
         </div>
@@ -61,6 +61,7 @@ return (
                 <div className="mb-20">
                     <div className="mb-12">
                       <h2 className="text-3xl md:text-4xl font-bold text-dark mb-3">📚 Courses</h2>
+                      {/* <p className="text-gray-600">Comprehensive courses covering all subjects for Class {typeof classNum === 'string' ? (classNum === 'competitive-exams' ? 'Competitive Exams' : classNum) : classNum}</p> */}
                       <p className="text-gray-600">Comprehensive courses covering all subjects for Class {classNum}</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

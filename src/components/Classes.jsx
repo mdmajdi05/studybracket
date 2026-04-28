@@ -26,7 +26,7 @@ const Classes = () => {
               >
                 <div className="relative mb-6">
                   <div className="absolute inset-0 bg-gradient-to-b from-primary to-secondary rounded-full opacity-0 group-hover:opacity-20 transition duration-300 blur-lg"></div>
-                  <div className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary group-hover:scale-110 transition duration-300">
+                  <div className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary group-hover:scale-110 transition duration-300">
                     {cls.id}
                   </div>
                 </div>

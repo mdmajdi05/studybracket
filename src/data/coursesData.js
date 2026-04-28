@@ -7,6 +7,7 @@ export const classes = [
   { id: 10, name: 'Class 10' },
   { id: 11, name: 'Class 11' },
   { id: 12, name: 'Class 12' },
+  { id: 'competitive exams', name: 'Competitive Exams Preparation' }
 ];
 
 export const coursesData = {
@@ -37,6 +38,15 @@ export const coursesData = {
       topics: ['Parts of Speech', 'Tenses', 'Comprehension', 'Story Writing', 'Letter Writing', 'Vocabulary Building'],
       chapters: 10,
       duration: '4 months'
+    },
+    {
+      id: 'social-5',
+      name: 'Social Science',
+      icon: '🌍',
+      description: 'Class 5 Social Science - History, Geography & Civics',
+      topics: ['Ancient Civilizations', 'Globe & Maps', 'Government & Democracy', 'India - Our Country'],
+      chapters: 12,
+      duration: '5 months'
     }
   ],
 
@@ -58,6 +68,15 @@ export const coursesData = {
       topics: ['Food & Components', 'Sorting Materials', 'Changes Around Us', 'Motion & Measurement', 'Light & Electricity', 'Plants & Animals'],
       chapters: 16,
       duration: '6 months'
+    },
+    {
+      id: 'english-6',
+      name: 'English',
+      icon: '📚',
+      description: 'Class 6 English - Grammar, Stories & Writing Skills',
+      topics: ['Parts of Speech', 'Tenses', 'Comprehension', 'Story Writing', 'Letter Writing', 'Vocabulary Building'],
+      chapters: 10,
+      duration: '4 months'
     },
     {
       id: 'social-6',
@@ -90,6 +109,15 @@ export const coursesData = {
       duration: '6 months'
     },
     {
+      id: 'english-7',
+      name: 'English',
+      icon: '📚',
+      description: 'Class 7 English - Grammar, Stories & Writing Skills',
+      topics: ['Parts of Speech', 'Tenses', 'Comprehension', 'Story Writing', 'Letter Writing', 'Vocabulary Building'],
+      chapters: 10,
+      duration: '4 months'
+    },
+    {
       id: 'social-7',
       name: 'Social Science',
       icon: '🌍',
@@ -118,6 +146,15 @@ export const coursesData = {
       topics: ['Crop Production', 'Microorganisms', 'Force & Pressure', 'Friction', 'Sound', 'Chemical Effects of Current', 'Cell Structure'],
       chapters: 18,
       duration: '6 months'
+    },
+    {
+      id: 'english-8',
+      name: 'English',
+      icon: '📚',
+      description: 'Class 8 English - Grammar, Stories & Writing Skills',
+      topics: ['Parts of Speech', 'Tenses', 'Comprehension', 'Story Writing', 'Letter Writing', 'Vocabulary Building'],
+      chapters: 10,
+      duration: '4 months'
     },
     {
       id: 'social-8',
@@ -241,7 +278,82 @@ export const coursesData = {
       topics: ['Cell: Structure & Function', 'Cell Cycle & Division', 'Biomolecules: Proteins, Nucleic Acids, Lipids', 'Plant Anatomy & Morphology', 'Human Anatomy & Physiology', 'Digestion & Nutrition', 'Respiration & Photosynthesis', 'Plant Growth & Development', 'Human Excretion & Osmoregulation', 'Nervous System & Locomotion', 'Chemical Coordination: Hormones', 'Reproduction in Plants', 'Reproduction in Humans', 'Principles of Inheritance'],
       chapters: 22,
       duration: '6 months'
+    },
+    {
+      id: 'accounts-11',
+      name: 'Accountancy',
+      icon: '📊',
+      description: 'Class 11 Accountancy - Basics of Accounting, Journal & Ledger',
+      topics: ['Introduction to Accounting', 'Journal Entries', 'Ledger Posting', 'Trial Balance', 'Depreciation', 'Financial Statements'],
+      chapters: 15,
+      duration: '6 months'
+    },
+    {
+      id: 'economics-11',
+      name: 'Economics',
+      icon: '📈',
+      description: 'Class 11 Economics - Microeconomics & Statistics',
+      topics: ['Introduction to Economics', 'Consumer Behaviour', 'Demand & Supply', 'Statistics Basics', 'Data Collection', 'Index Numbers'],
+      chapters: 14,
+      duration: '6 months'
+    },
+    {
+      id: 'bst-11',
+      name: 'Business Studies',
+      icon: '🏢',
+      description: 'Class 11 Business Studies - Business Organization & Management',
+      topics: ['Business Concepts', 'Forms of Business', 'Private & Public Sector', 'Business Services', 'Emerging Modes of Business'],
+      chapters: 13,
+      duration: '5 months'
+    },
+    {
+      id: 'english-11',
+      name: 'English',
+      icon: '📚',
+      description: 'Class 11 English - Grammar & Literature',
+      topics: ['Reading Skills', 'Writing Skills', 'Grammar', 'Literature'],
+      chapters: 10,
+      duration: '4 months'
+    },
+
+    // HUMANITIES
+    {
+      id: 'polity-11',
+      name: 'Political Science',
+      icon: '🏛️',
+      description: 'Class 11 Political Science - Constitution & Political Theory',
+      topics: ['Political Theory', 'Indian Constitution', 'Rights & Duties'],
+      chapters: 12,
+      duration: '5 months'
+    },
+    {
+      id: 'history-11',
+      name: 'History',
+      icon: '📜',
+      description: 'Class 11 History - Ancient & Medieval History',
+      topics: ['Ancient Civilizations', 'Empires', 'Culture & Society'],
+      chapters: 14,
+      duration: '5 months'
+    },
+    {
+      id: 'geo-11',
+      name: 'Geography',
+      icon: '🌍',
+      description: 'Class 11 Geography - Physical Geography',
+      topics: ['Earth Structure', 'Climate', 'Landforms', 'Resources'],
+      chapters: 12,
+      duration: '5 months'
+    },
+    {
+      id: 'psychology-11',
+      name: 'Psychology',
+      icon: '🧠',
+      description: 'Class 11 Psychology - Human Behaviour Basics',
+      topics: ['Introduction to Psychology', 'Learning', 'Memory', 'Motivation'],
+      chapters: 10,
+      duration: '4 months'
     }
+
   ],
   12: [
     {
@@ -279,8 +391,135 @@ export const coursesData = {
       topics: ['Reproduction in Organisms: Asexual & Sexual', 'Flower Structure & Pollination', 'Human Reproduction & Embryo Development', 'Reproductive Health & Contraception', 'Principles of Inheritance: Mendelian Genetics', 'Molecular Basis of Inheritance: DNA & Replication', 'Gene Expression & Regulation', 'Human Health & Disease', 'Strategies for Enhancement of Food Production', 'Microbes in Human Welfare: Antibiotics & Vaccines', 'Biotechnology: Principles & Enzymes', 'Applications of Biotechnology: GMOs & Gene Therapy', 'Organisms & Populations: Ecology', 'Ecosystem Energy Flow & Nutrient Cycling', 'Biodiversity & Conservation'],
       chapters: 16,
       duration: '6 months'
+    },
+    // COMMERCE
+    {
+      id: 'accounts-12',
+      name: 'Accountancy',
+      icon: '📊',
+      description: 'Class 12 Accountancy - Partnership & Company Accounts',
+      topics: ['Partnership Accounts', 'Company Accounts', 'Financial Statements Analysis'],
+      chapters: 15,
+      duration: '6 months'
+    },
+    {
+      id: 'economics-12',
+      name: 'Economics',
+      icon: '📈',
+      description: 'Class 12 Economics - Macroeconomics & Indian Economy',
+      topics: ['National Income', 'Money & Banking', 'Government Budget', 'Indian Economy'],
+      chapters: 14,
+      duration: '6 months'
+    },
+    {
+      id: 'bst-12',
+      name: 'Business Studies',
+      icon: '🏢',
+      description: 'Class 12 Business Studies - Management & Marketing',
+      topics: ['Management Principles', 'Business Environment', 'Marketing', 'Financial Management'],
+      chapters: 13,
+      duration: '5 months'
+    },
+    {
+      id: 'english-12',
+      name: 'English',
+      icon: '📚',
+      description: 'Class 12 English - Board Preparation',
+      topics: ['Reading', 'Writing', 'Literature', 'Grammar'],
+      chapters: 10,
+      duration: '4 months'
+    },
+
+    // HUMANITIES
+    {
+      id: 'polity-12',
+      name: 'Political Science',
+      icon: '🏛️',
+      description: 'Class 12 Political Science - Contemporary Politics',
+      topics: ['Indian Politics', 'World Politics', 'International Relations'],
+      chapters: 12,
+      duration: '5 months'
+    },
+    {
+      id: 'history-12',
+      name: 'History',
+      icon: '📜',
+      description: 'Class 12 History - Modern History & World History',
+      topics: ['Freedom Struggle', 'World Wars', 'Modern India'],
+      chapters: 14,
+      duration: '5 months'
+    },
+    {
+      id: 'geo-12',
+      name: 'Geography',
+      icon: '🌍',
+      description: 'Class 12 Geography - Human & Economic Geography',
+      topics: ['Human Geography', 'Resources', 'Development'],
+      chapters: 12,
+      duration: '5 months'
+    },
+    {
+      id: 'psychology-12',
+      name: 'Psychology',
+      icon: '🧠',
+      description: 'Class 12 Psychology - Advanced Psychology',
+      topics: ['Personality', 'Mental Disorders', 'Therapies'],
+      chapters: 10,
+      duration: '4 months'
     }
+  ],
+  'competitive exams': [
+    {
+    id: 'cuet',
+    name: 'CUET',
+    icon: '🎯',
+    subjects: ['General Test', 'Domain Subjects', 'English'],
+    duration: '6 months'
+  },
+  {
+    id: 'ca',
+    name: 'CA',
+    icon: '💼',
+    subjects: ['Accounting', 'Law', 'Maths', 'Economics'],
+    duration: '8 months'
+  },
+  {
+    id: 'cma',
+    name: 'CMA',
+    icon: '📊',
+    subjects: ['Accounting', 'Economics', 'Business Laws'],
+    duration: '8 months'
+  },
+  {
+    id: 'ipmat',
+    name: 'IPMAT',
+    icon: '🏫',
+    subjects: ['Quantitative Aptitude', 'Verbal Ability'],
+    duration: '6 months'
+  },
+  {
+    id: 'jee',
+    name: 'JEE',
+    icon: '⚡',
+    subjects: ['Physics', 'Chemistry', 'Mathematics'],
+    duration: '12 months'
+  },
+  {
+    id: 'neet',
+    name: 'NEET',
+    icon: '🧬',
+    subjects: ['Physics', 'Chemistry', 'Biology'],
+    duration: '12 months'
+  },
+  {
+    id: 'ssc',
+    name: 'SSC',
+    icon: '📘',
+    subjects: ['Maths', 'Reasoning', 'English', 'GK'],
+    duration: '6 months'
+  }
   ]
+
 };
 
 export const studyResources = {

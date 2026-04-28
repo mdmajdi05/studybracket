@@ -55,36 +55,36 @@ const ComingSoonCourses = () => {
     color: 'from-yellow-400 to-orange-500',
     description: 'Strong foundation in Physics, Chemistry, Maths & Biology'
   },
-    {
-      id: 6,
-      name: 'Advanced Python Programming',
-      category: 'Class 12',
-      launchDate: '1 March 2026',
-      students: 2345,
-      icon: '🐍',
-      color: 'from-yellow-400 to-yellow-600',
-      description: 'Master Python with real-world projects'
-    },
-    {
-      id: 7,
-      name: 'Web Development with MERN',
-      category: 'Advanced',
-      launchDate: '15 March 2026',
-      students: 3421,
-      icon: '🌐',
-      color: 'from-blue-400 to-purple-600',
-      description: 'Build full-stack web applications'
-    },
-    {
-      id: 8,
-      name: 'AI & Machine Learning Basics',
-      category: 'Class 12 + Beyond',
-      launchDate: '1 April 2026',
-      students: 4567,
-      icon: '🤖',
-      color: 'from-green-400 to-emerald-600',
-      description: 'Introduction to AI and ML concepts'
-    },
+      // {
+      //   id: 6,
+      //   name: 'Advanced Python Programming',
+      //   category: 'Class 12',
+      //   launchDate: '1 March 2026',
+      //   students: 2345,
+      //   icon: '🐍',
+      //   color: 'from-yellow-400 to-yellow-600',
+      //   description: 'Master Python with real-world projects'
+      // },
+      // {
+      //   id: 7,
+      //   name: 'Web Development with MERN',
+      //   category: 'Advanced',
+      //   launchDate: '15 March 2026',
+      //   students: 3421,
+      //   icon: '🌐',
+      //   color: 'from-blue-400 to-purple-600',
+      //   description: 'Build full-stack web applications'
+      // },
+      // {
+      //   id: 8,
+      //   name: 'AI & Machine Learning Basics',
+      //   category: 'Class 12 + Beyond',
+      //   launchDate: '1 April 2026',
+      //   students: 4567,
+      //   icon: '🤖',
+      //   color: 'from-green-400 to-emerald-600',
+      //   description: 'Introduction to AI and ML concepts'
+      // },
     {
       id: 9,
       name: 'Competitive Programming',

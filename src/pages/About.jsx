@@ -96,6 +96,41 @@ const About = () => {
               </div>
             </div>
 
+
+
+{/* Director Section */}
+<div className="mb-16">
+  <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 border-t-4 border-primary hover:shadow-2xl transition">
+
+    {/* Director Image */}
+    <div className="flex-shrink-0">
+      <img
+        src="/director.jpeg"
+        alt="Director"
+        className="w-40 h-40 rounded-full object-cover border-4 border-primary shadow-md"
+      />
+    </div>
+
+    {/* Director Info */}
+    <div className="text-center md:text-left">
+      <h2 className="text-3xl font-bold text-dark mb-2">
+        Meet Our Director
+      </h2>
+      <h3 className="text-2xl font-semibold text-primary mb-1">
+        Mr. Vivek Sharma
+      </h3>
+      <p className="text-gray-600 font-medium mb-3">
+        Director of StudyBracket
+      </p>
+      <p className="text-gray-700 leading-relaxed max-w-xl">
+        With a strong vision for transforming education in India, our director leads StudyBracket with a mission to make high-quality learning accessible to every student. Passionate about innovation and impact, they drive the platform towards excellence and student success.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
             {/* Location Section */}
             <div className="mb-16">
               <h2 className="text-3xl font-bold text-center mb-8">Our Location</h2>
@@ -165,7 +200,7 @@ const About = () => {
         </section>
 
         {/* Meet Our Team */}
-        <section className="py-20 px-4">
+        {/* <section className="py-20 px-4">
           <div className="container-custom">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">
@@ -185,23 +220,23 @@ const About = () => {
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 hover:-translate-y-2 group"
                   style={{ animation: `slideInUp 0.6s ease-out ${index * 0.1}s both` }}
                 >
-                  {/* Avatar */}
+                  //Avatar 
                   <div className="bg-gradient-to-br from-primary to-secondary p-12 text-center group-hover:scale-110 transition duration-500">
                     <div className="text-8xl">{member.image}</div>
                   </div>
 
-                  {/* when need images of team */}
-                  {/* <div className=" p-1 text-center group-hover:scale-110 transition duration-500">
-                    <img src={member.image} alt={member.name} className="w-50 h-50 mx-auto rounded-full" />
-                  </div> */}
+                  //when need images of team
+                  // <div className=" p-1 text-center group-hover:scale-110 transition duration-500">
+                  //   <img src={member.image} alt={member.name} className="w-50 h-50 mx-auto rounded-full" />
+                  // </div>
 
-                  {/* Info */}
+                  //Info
                   <div className="p-6 text-center">
                     <h3 className="text-xl font-bold text-dark mb-2">{member.name}</h3>
                     <p className="text-primary font-bold mb-3">{member.role}</p>
                     <p className="text-gray-600 text-sm mb-6">{member.bio}</p>
 
-                    {/* Social Links */}
+                    //Social Links
                     <div className="flex justify-center gap-4">
                       <a href={member.social.twitter} className="text-gray-400 hover:text-primary transition text-xl">
                         <FaTwitter />
@@ -218,7 +253,7 @@ const About = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact CTA */}
         <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white px-4">

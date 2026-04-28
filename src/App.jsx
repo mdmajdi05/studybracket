@@ -16,6 +16,7 @@ import { useEffect, useState } from 'react'
 import MaintenancePage from './components/MaintenancePage'
 import Popup from './components/Popup'
 import { PopupProvider } from './context/PopupContext'
+import DeveloperInfo from './developer-info/DeveloperInfo'
 
 
 
@@ -147,6 +148,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/terms" element={<Terms />} />
+                <Route path="/dev" element={<DeveloperInfo />} />
               </Routes>
             </main>
             <Footer />
